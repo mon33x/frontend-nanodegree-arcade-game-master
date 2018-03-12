@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+      <title>Effective JavaScript: Frogger</title>
+      <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     
+      <div class="modal">
+            <div class="modal-content">
+                  <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Congratulations!</h2>
+                  </div>
+                  <div class="modal-body">
+                        <p class="modal-text">
+                              You deposited <span>10</span> gems while being chased by <span>10</span> enemies!
+                        </p>
+                  </div>
+            </div>
+      </div>
+      <main>
+            <canvas class="screen"></canvas>
+            <span class="info lives">LIVES : <span>5</span> <i class="fa fa-heart"></i></span>
+            <span class="info enemies">ENEMIES : <span>3</span> <i class="fa fa-bug"></i></span>
+      </main>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/resources.js"></script>
+      <script src="js/settings.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/engine.js"></script>
+</body>
+</html>
