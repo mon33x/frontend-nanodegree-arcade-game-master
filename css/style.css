@@ -1,0 +1,125 @@
+body {
+      text-align: center;
+}
+
+main {
+      display: flex;
+      justify-content: center;
+}
+
+.help {
+      font-size: 3em;
+      font-weight: bold;
+      float: left;
+      display: none;
+      position: absolute;
+}
+
+.help:hover,
+.help:focus {
+      text-decoration: none;
+      color: blue;
+      cursor: pointer;
+}
+
+.info {
+      z-index: 0;
+      position: absolute;
+      margin: auto auto;
+      color: white;
+}
+
+.lives {
+      margin-left: -192px;
+      margin-top: 485px;
+}
+
+.gemsCarried {
+      margin-left: -185px;
+      margin-top: 505px;
+}
+
+.gemsDeposited {
+      margin-left: -185px;
+      margin-top: 525px;
+}
+
+.enemies {
+      margin-left: -182px;
+      margin-top: 505px;
+}
+
+.screen {
+      position: absolute;
+      z-index: -1;
+}
+
+
+.modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+}
+
+/* Content */
+
+.modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s;
+}
+
+/* Add Modal Animation */
+@-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+}
+
+/* The Close Button */
+
+.close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+      text-decoration: none;
+      color: #000;
+      cursor: pointer;
+}
+
+/* Modal content */
+
+.modal-header {
+      padding: 2px 16px;
+      background-color: #02b3e4;
+      color: white;
+}
+
+.modal-body {
+      padding: 2px 16px;
+}
